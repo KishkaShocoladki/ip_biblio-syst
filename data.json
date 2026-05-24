@@ -1,0 +1,354 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "passwordHash": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "ivanov",
+      "email": "ivanov@example.com",
+      "passwordHash": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "role": "user",
+      "createdAt": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "username": "petrova",
+      "email": "petrova@example.com",
+      "passwordHash": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "role": "user",
+      "createdAt": "2024-01-03T00:00:00Z"
+    },
+    {
+      "id": 1779659147986,
+      "username": "123",
+      "email": "theredguy13@gmail.com",
+      "passwordHash": "$2a$10$Qd2o2kKnoCIfh8KA76/.ne6mp6CqVA/9gjUE6JQPRxsvlvNXMIQnK",
+      "role": "admin",
+      "createdAt": "2026-05-24T21:45:47.986Z"
+    },
+    {
+      "id": 1779659401146,
+      "username": "456",
+      "email": "456@456",
+      "passwordHash": "$2a$10$xKgzy909.D.m39Rwy3IIIuSJloEwjlOagrP62dL2LX783fHtpPD5e",
+      "role": "user",
+      "createdAt": "2026-05-24T21:50:01.147Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Художественная литература",
+      "color": "#4caf50"
+    },
+    {
+      "id": 2,
+      "name": "Научная литература",
+      "color": "#2196f3"
+    },
+    {
+      "id": 3,
+      "name": "Программирование",
+      "color": "#ff9800"
+    },
+    {
+      "id": 4,
+      "name": "История",
+      "color": "#9c27b0"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Мастер и Маргарита",
+      "author": "М. Булгаков",
+      "isbn": "978-5-04-094825-2",
+      "categoryId": 1,
+      "year": 1967,
+      "copies": 3,
+      "description": "Роман о дьяволе, посетившем Москву в советское время.",
+      "cover": ""
+    },
+    {
+      "id": 2,
+      "title": "Чистый код",
+      "author": "Р. Мартин",
+      "isbn": "978-5-4461-0960-9",
+      "categoryId": 3,
+      "year": 2008,
+      "copies": 2,
+      "description": "Создание, анализ и рефакторинг кода.",
+      "cover": ""
+    },
+    {
+      "id": 3,
+      "title": "Краткая история времени",
+      "author": "С. Хокинг",
+      "isbn": "978-5-17-077288-5",
+      "categoryId": 2,
+      "year": 1988,
+      "copies": 1,
+      "description": "Популярная книга о космологии и физике.",
+      "cover": ""
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "visitorId": 2,
+      "issuedAt": "2024-05-01",
+      "returnBy": "2024-05-15",
+      "returnedAt": "2024-05-14",
+      "status": "returned",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "bookId": 2,
+      "visitorId": 3,
+      "issuedAt": "2024-05-10",
+      "returnBy": "2024-05-24",
+      "returnedAt": null,
+      "status": "active",
+      "notes": "Попросила продлить при необходимости"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Разработчик",
+      "description": "Рядовой сотрудник разработки",
+      "color": "#4caf50"
+    },
+    {
+      "id": 2,
+      "name": "Менеджер",
+      "description": "Руководитель проекта",
+      "color": "#2196f3"
+    },
+    {
+      "id": 3,
+      "name": "Охрана",
+      "description": "Охранник",
+      "color": "#ff5722"
+    },
+    {
+      "id": 4,
+      "name": "Бухгалтерия",
+      "description": "Финансовый отдел",
+      "color": "#9c27b0"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Серверная",
+      "floor": 1,
+      "building": "А",
+      "accessLevel": "3",
+      "description": "Серверная комната, доступ строго ограничен"
+    },
+    {
+      "id": 2,
+      "name": "Опен-спейс",
+      "floor": 2,
+      "building": "А",
+      "accessLevel": "1",
+      "description": "Рабочее пространство разработчиков"
+    },
+    {
+      "id": 3,
+      "name": "Переговорная 1",
+      "floor": 2,
+      "building": "Б",
+      "accessLevel": "1",
+      "description": "Переговорная комната"
+    }
+  ],
+  "files": [
+    {
+      "id": 1,
+      "name": "Внутренний регламент.pdf",
+      "path": "/files/reglament.pdf",
+      "type": "PDF",
+      "size": "1.2 MB",
+      "description": "Политика доступа и правила поведения на портале."
+    },
+    {
+      "id": 2,
+      "name": "Общие инструкции.docx",
+      "path": "/files/instructions.docx",
+      "type": "DOCX",
+      "size": "850 KB",
+      "description": "Инструкция по базовым процедурам и работе с сайтом."
+    },
+    {
+      "id": 3,
+      "name": "Отчёт мая.xlsx",
+      "path": "/files/report_may.xlsx",
+      "type": "XLSX",
+      "size": "430 KB",
+      "description": "Ежемесячный отчет по безопасности и активным сессиям."
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "employeeId": 2,
+      "roomId": 2,
+      "type": "enter",
+      "timestamp": "2024-05-10T09:01:00",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "employeeId": 2,
+      "roomId": 2,
+      "type": "exit",
+      "timestamp": "2024-05-10T18:05:00",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "employeeId": 3,
+      "roomId": 1,
+      "type": "denied",
+      "timestamp": "2024-05-10T10:30:00",
+      "notes": "Нет прав на серверную"
+    },
+    {
+      "employeeId": 1779659147986,
+      "type": "exit",
+      "timestamp": "2026-05-24T22:15:07.246Z",
+      "notes": "",
+      "id": 4
+    },
+    {
+      "employeeId": 1779659401146,
+      "type": "enter",
+      "timestamp": "2026-05-24T22:15:17.927Z",
+      "notes": "",
+      "id": 5
+    },
+    {
+      "employeeId": 1779659401146,
+      "type": "exit",
+      "timestamp": "2026-05-24T22:15:22.270Z",
+      "notes": "",
+      "id": 6
+    },
+    {
+      "employeeId": 1779659147986,
+      "type": "enter",
+      "timestamp": "2026-05-24T22:15:26.770Z",
+      "notes": "",
+      "id": 7
+    },
+    {
+      "employeeId": 1779659147986,
+      "type": "exit",
+      "timestamp": "2026-05-24T22:16:02.535Z",
+      "notes": "",
+      "id": 8
+    },
+    {
+      "employeeId": 1779659147986,
+      "type": "enter",
+      "timestamp": "2026-05-24T22:16:08.087Z",
+      "notes": "",
+      "id": 9
+    },
+    {
+      "employeeId": 1779659147986,
+      "type": "exit",
+      "timestamp": "2026-05-24T22:16:12.862Z",
+      "notes": "",
+      "id": 10
+    },
+    {
+      "employeeId": 1779659401146,
+      "type": "enter",
+      "timestamp": "2026-05-24T22:16:17.988Z",
+      "notes": "",
+      "id": 11
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "backend-api",
+      "description": "REST API для основного продукта",
+      "visibility": "public",
+      "status": "active",
+      "language": "Go",
+      "stars": 12,
+      "userId": 2,
+      "createdAt": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "frontend-app",
+      "description": "SPA на React",
+      "visibility": "public",
+      "status": "active",
+      "language": "TypeScript",
+      "stars": 8,
+      "userId": 3,
+      "createdAt": "2024-02-01T00:00:00Z"
+    }
+  ],
+  "milestones": [
+    {
+      "id": 1,
+      "title": "v1.0 Release",
+      "projectId": 1,
+      "description": "Первый стабильный релиз",
+      "dueDate": "2024-06-01",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "title": "v0.9 Beta",
+      "projectId": 1,
+      "description": "Бета-версия для тестирования",
+      "dueDate": "2024-05-01",
+      "status": "closed"
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "title": "Fix auth token expiry",
+      "projectId": 1,
+      "milestoneId": 1,
+      "assigneeId": 2,
+      "type": "bug",
+      "priority": "high",
+      "status": "in_progress",
+      "description": "JWT-токен не обновляется при истечении",
+      "userId": 2,
+      "createdAt": "2024-05-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Add dark mode",
+      "projectId": 2,
+      "milestoneId": null,
+      "assigneeId": 3,
+      "type": "feature",
+      "priority": "medium",
+      "status": "open",
+      "description": "Тёмная тема для интерфейса",
+      "userId": 3,
+      "createdAt": "2024-05-05T00:00:00Z"
+    }
+  ],
+  "favorites": []
+}
