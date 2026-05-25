@@ -389,5 +389,5 @@ const themes = {
   },
 };
 
-export const APP_CONFIG = themes[THEME];
-export const CURRENT_THEME = THEME;
+// Конфигурация темы удалена — оставлены только DTO (см. src/dto)
+export * from './dto/index.js';
